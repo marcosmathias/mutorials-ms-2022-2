@@ -1,0 +1,10 @@
+/.vscode
+.DS_Store
+.iml
+.idea/
+.idea/**
+CODEOWNERS
+**/node_modules
+.vimspector.json
+
+/.vs
