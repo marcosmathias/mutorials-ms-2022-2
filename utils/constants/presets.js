@@ -1,4 +1,4 @@
-// fill in preset units later
+// Lista de matérias/tópicos padrão
 const presetUnitOptions = {
     "Physics": {
         "AP Physics 1": ["Measurement", "Kinematics", "Newton's Laws", "Forces", "Linear Momentum", "Rotation", "Energy Basics", "Gravitation", "Oscillations", "Sound", "Simple Machines"],
