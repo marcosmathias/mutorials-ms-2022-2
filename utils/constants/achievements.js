@@ -1,3 +1,5 @@
+//Lista de conquistas disponíveis dentro da plataforma
+
 const achievementDescriptions = {
     "join_mutorials": {
         name: "Mutorials Comrade",
