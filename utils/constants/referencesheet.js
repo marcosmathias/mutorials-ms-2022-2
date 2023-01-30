@@ -1,4 +1,4 @@
-// tags
+// Equações/constantes personalizadas a serem usadas em todo o software
 const referenceSheet = {
     equations: {
         "First Kinematics Equation": "$v = v_0 + at$",
