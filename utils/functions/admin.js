@@ -1,8 +1,9 @@
+// Conexão com base de dados
 const mongoose = require("mongoose");
 const { average } = require("./general");
 const db = mongoose.connection;
 
-// get specific admin analytics about the database
+// Obter dados específicos para analytics
 async function getAdminData(User, Ques, SiteData) {
 
     let physicsQs = await Ques.find({ subject: "Physics" }).exec();
@@ -31,7 +32,7 @@ async function getAdminData(User, Ques, SiteData) {
     }
 }
 
-// query the performance of a contributor
+// Consultar a performance de um colaborador
 async function queryContributor(id, Ques, PendingQues) {
 
     let written = await Ques.find({ author: id }).exec();
@@ -123,10 +124,10 @@ async function queryContributor(id, Ques, PendingQues) {
     };
 }
 
-// approximation of number of hours to write a single question
+// Calcular a quantidade de horas necessárias para se escrever uma questão
 function calculateHours(subject, rating) {
 
-    // heuristic functions are subject to change
+    // Funções extras
     if (subject == "Physics") {
         return 0.05 * Math.pow(Math.E, 0.0009 * rating);
     } else if (subject == "Chemistry") {
