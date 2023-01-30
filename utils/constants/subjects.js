@@ -1,4 +1,4 @@
-// list of subjects and units used
+// Lista de tópicos e unidades usadas
 const subjects = ["Physics", "Chemistry", "Biology", "USABO"];
 const subjectUnitDictionary = {
     "Physics": ["Measurement",
